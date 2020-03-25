@@ -4,7 +4,7 @@ echo "Auto Login Wifi ID\n";
 echo "Get Ip Dulu ...\n";
 echo "[1] Windows\n";
 echo "[2] Linux / Android\n";
-echo "Kamu Pake apa ? : 2";
+echo "Kamu Pake apa ? :2";
 $w = trim(fgets(STDIN));
 if ( $w == 1) {
     echo shell_exec("ipconfig");
@@ -13,9 +13,9 @@ if ( $w == 1) {
 }else {
     echo "heuhhh... Ngetik yg bner euyy";
 }
-echo "\nCopy Ip mu ksni : 10.100.0.2";
+echo "\nCopy Ip mu ksni :10.100.0.2";
 $myip = trim(fgets(STDIN));
-echo "\nMasukin List Wifi ID mu : user.txt";
+echo "\nMasukin List Wifi ID mu :user.txt";
 $filenya = trim(fgets(STDIN));
 $makan = file_get_contents("http://www.msftconnecttest.com/redirect");
 $gw_id = preg_match_all('/gw_id=(.*?)&/', $makan, $hasilgw);
